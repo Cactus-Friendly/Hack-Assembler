@@ -29,6 +29,8 @@ There are eight pre-mapped memory locations set aside for the assembler to use. 
 - `@SCREEN` screen memory location 16384
 - `@KBD` keyboard memory location 24576
 
+---
+
 The Hack architecture only allows addition and subtraction when doing math.
 
 The Hack architecture also only has three predefined literals, `0`, `1`, and `-1`, used like this: `A=-1`, `D=0`, `M=1`. This won't work however: `A=25`.
