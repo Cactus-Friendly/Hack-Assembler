@@ -14,13 +14,13 @@ This is an Assembler for the Hack computer architeture described in the book: *T
 
 ---
 
-The Hack architecture only has two registers, '''A''' and '''D'''. Register '''A''' can replaced with '''M''' when a location in memory needs to be referenced. That location will point to the memory location that is the value of '''A'''.
+The Hack architecture only has two registers, ```A``` and ```D```. Register ```A``` can replaced with ```M``` when a location in memory needs to be referenced. That location will point to the memory location that is the value of ```A```.
 
 Example
 <br />
 Giving memory location 10 the value of 200.
 
-'''
+```
 @10
 M=200
-'''
+```
