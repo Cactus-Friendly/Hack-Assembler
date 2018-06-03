@@ -37,8 +37,9 @@ The Hack architecture also only has three predefined literals, `0`, `1`, and `-1
 
 Jumps are done by setting the value of `A` to the line that you want to jump to in you code then using the jump condition to jump to it
 <br />
+
 | JUMPS                  |
-| ----------------------:|
+| ---------------------- |
 | JGT | If value is > 0  |
 | JEQ | If value is = 0  |
 | JGE | If value is >= 0 |
@@ -46,7 +47,9 @@ Jumps are done by setting the value of `A` to the line that you want to jump to 
 | JLE | If value is <= 0 |
 | JNE | If value is != 0 |
 | JMP |      Jump        |
+
 <br />
+
 ###Examples
 
 <br />
