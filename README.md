@@ -20,14 +20,14 @@ To give a value to the registers starts with giving a value to the `A` register 
 
 There are eight pre-mapped memory locations set aside for the assembler to use. These locations are: 
 
-*`@SP` location 0
-*`@LCL` location 1
-*`@ARG` location 2
-*`@THIS` location 3
-*`@THAT` location 4
-*`@R0-R15` locations 0-15 (Virtual Registers)
-*`@SCREEN` screen memory location 16384
-*`@KBD` keyboard memory location 24576
+- `@SP` location 0
+- `@LCL` location 1
+- `@ARG` location 2
+- `@THIS` location 3
+- `@THAT` location 4
+- `@R0-R15` locations 0-15 (Virtual Registers)
+- `@SCREEN` screen memory location 16384
+- `@KBD` keyboard memory location 24576
 
 The Hack architecture only allows addition and subtraction when doing math.
 
