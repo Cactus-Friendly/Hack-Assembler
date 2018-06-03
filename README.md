@@ -35,7 +35,20 @@ The Hack architecture only allows addition and subtraction when doing math.
 
 The Hack architecture also only has three predefined literals, `0`, `1`, and `-1`, used like this: `A=-1`, `D=0`, `M=1`. This won't work however: `A=25`.
 
-Examples
+Jumps are done by setting the value of `A` to the line that you want to jump to in you code then using the jump condition to jump to it
+<br />
+|JUMPS                 |
+|----------------------|
+|JGT| If value is > 0  |
+|JEQ| If value is = 0  |
+|JGE| If value is >= 0 |
+|JLT| If value is < 0  |
+|JLE| If value is <= 0 |
+|JNE| If value is != 0 |
+|JMP|      Jump        |
+<br />
+###Examples
+
 <br />
 Setting values in the registers then to memory.
 
