@@ -35,7 +35,7 @@ The Hack architecture only allows addition and subtraction when doing math.
 
 The Hack architecture also only has three predefined literals, `0`, `1`, and `-1`, used like this: `A=-1`, `D=0`, `M=1`. This won't work however: `A=25`.
 
-Jumps are done by setting the value of `A` to the line that you want to jump to in you code then using the jump condition to jump to it
+Jumps are done by setting the value of `A` to the line that you want to jump to in you code then using the jump condition to jump to it. Jumps can also be used with labels to jump a specific line in the code without having to know that line number.
 <br />
 
 | JUMPS |    CONDITIONS    |
@@ -48,9 +48,13 @@ Jumps are done by setting the value of `A` to the line that you want to jump to 
 |  JNE  | If value is != 0 |
 |  JMP  |      Jump        |
 
+Memory location can also be represented by labels. These labeled memory locations start at location 16 and increase from there.
+
+Comments are done by using `//`
+
 <br />
 
-###Examples
+### Examples
 
 <br />
 Setting values in the registers then to memory.
@@ -68,4 +72,51 @@ Putting the value of 200 into memory.
 D=A
 @10
 M=D
+```
+
+<br />
+Jumping to line
+
+```assembly
+@3
+D=A
+@10
+D;JGT
+@4
+D=D-A
+@10
+D=A
+D=D-1
+M=D
+```
+
+<br />
+Jumping to line with label
+
+```assembly
+  @3
+  D=A
+  @end   // Label set to value 9
+  D;JGT
+  @4
+  D=D-A
+  @10
+  D=A
+  D=D-1
+(end)
+  M=D
+```
+
+<br />
+Accessing memory with labels
+```assembly
+  @3
+  D=A
+(loop)
+  @counter   // counter stored in memory location 16
+  M=D
+  D=D-1
+  @loop
+  D;JLT
+  D=0
 ```
