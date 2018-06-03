@@ -10,3 +10,8 @@ This is an Assembler for the Hack computer achiteture described in the book: *Th
 
 ---
 
+## Hack Assembly Language
+
+---
+
+The Hack achitecture only has two registrers 
